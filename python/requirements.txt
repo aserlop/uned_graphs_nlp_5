@@ -1,0 +1,11 @@
+# For data wrangling
+pandas==1.1.
+
+# For notebooks
+ipykernel==5.1.
+
+# For parsing Pajek
+networkx==2.6.
+
+# For testing (if used)
+nose==1.3.

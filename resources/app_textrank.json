@@ -1,0 +1,13 @@
+{
+  "input_base_path":      "../../../Downloads/Archivos_Etiquetados",
+  "output_base_path":     "../../../Downloads/out",
+  "duplicated_char_list": ["/"],
+  "valid_tag_list":       ["JJ", "JJR", "JJS", "NN", "NNS"],
+  "do_global":            1,
+  "do_textrank":          1,
+  "num_tokens_window":    5,
+  "num_keyphrases":       5,
+  "textrank_params":      {"damping":    0.85,
+                           "min_diff":   1e-5,
+                           "num_epochs": 10}
+}
