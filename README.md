@@ -37,8 +37,8 @@ The program can be used using the json file inside the resources folder its stru
 * valid_tag_list (List[str]). Valid tags to remain in each document. If empty list is given all tags are used.
 * do_global (int). Can be either zero if we want to run the program treating each document separately or one if we want to combine all documents into one.
 * do_textrank(int). Can be either zer if we only want to get the co-occurrence matrix and export it or one if we want to do both co-ocurrence matrix and keyphrases.
-* num_tokens_window. Number of tokens to consider two words as a pair.
-* num_keyphrases. Number of keyphrases to export after ranking using TextRank.
+* num_tokens_window (int). Number of tokens to consider two words as a pair.
+* num_keyphrases (int). Number of keyphrases to export after ranking using TextRank.
 * textrank_params. Parameters of the PageRank algorithm.
     * damping (float). PageRank's damping factor, by default 0.85
     * min_diff (float). Minimun difference to pass to the next epoch.
