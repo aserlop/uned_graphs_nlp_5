@@ -7,22 +7,25 @@ The assignment consists of elaborating a program that fulfills the following fun
 * Build a co-occurrence matrix and export it in Pajek format.
 * Develop an implementation of TextRank, obtain the most relevant terms and export them in a text file.
 
+
 ## Instructions of use
 
 Prerequisites:
-    * Conda navigator installed
+
+* Conda navigator installed
 
 Instructions:
-    * Clone this repository or use the zip version.
-    * Modify json in resources with your specific parameters
-    * Open a bash terminal and change directory to the bash folder
-    * Run `sh create_env.sh` to create an environment with the library installed
-    * Run `sh launch_app.sh` to run the program.
+
+* Clone this repository or use the zip version.
+* Modify json in resources with your specific parameters
+* Open a bash terminal and change directory to the bash folder
+* Run `sh create_env.sh` to create an environment with the library installed
+* Run `sh launch_app.sh` to run the program.
 
 Outputs:
-    * File with co-occurrence matrix in Pajek format at output_base_path
-    * (Optional) File with the keyphrases
-    * Log file with all the info of the process
+* File with co-occurrence matrix in Pajek format at output_base_path
+* (Optional) File with the keyphrases
+* Log file with all the info of the process
 
 ## Configuration
 
