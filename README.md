@@ -1,89 +1,42 @@
-# uned_graphs_nlp_5
-
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/aserlop/uned_graphs_nlp_5.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/integrations/)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://docs.gitlab.com/ee/user/application_security/sast/)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:4b99b7c9f022c7fe004e8187aa986b76?https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
+# UNED TextRank
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Source code for the assignment of unit 5 in Graphs applied to NLP course inside the Language Technologies UNED's masters program.
+The assignment consists of elaborating a program that fulfills the following functionalities given a collection of documents:
+* Build a co-occurrence matrix and export it in Pajek format.
+* Develop an implementation of TextRank, obtain the most relevant terms and export them in a text file.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Instructions of use
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Prerequisites:
+    * Conda navigator installed
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Instructions:
+    * Clone this repository or use the zip version.
+    * Modify json in resources with your specific parameters
+    * Open a bash terminal and change directory to the bash folder
+    * Run `sh create_env.sh` to create an environment with the library installed
+    * Run `sh launch_app.sh` to run the program.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Outputs:
+    * File with co-occurrence matrix in Pajek format at output_base_path
+    * (Optional) File with the keyphrases
+    * Log file with all the info of the process
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Configuration
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+The program can be used using the json file inside the resources folder its structure is as follows:
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-
+* input_base_path (str). Path to folder containing all the documents to proccess.
+* output_base_path (str). Path to folder to export all the results obtained.
+* duplicated_char_list (List[str]). List of characters to preprocess an drop consecutive duplicates.
+* valid_tag_list (List[str]). Valid tags to remain in each document. If empty list is given all tags are used.
+* do_global (int). Can be either zero if we want to run the program treating each document separately or one if we want to combine all documents into one.
+* do_textrank(int). Can be either zer if we only want to get the co-occurrence matrix and export it or one if we want to do both co-ocurrence matrix and keyphrases.
+* num_tokens_window. Number of tokens to consider two words as a pair.
+* num_keyphrases. Number of keyphrases to export after ranking using TextRank.
+* textrank_params. Parameters of the PageRank algorithm.
+    * damping (float). PageRank's damping factor, by default 0.85
+    * min_diff (float). Minimun difference to pass to the next epoch.
+    * num_epochs (int). Number of epochs
